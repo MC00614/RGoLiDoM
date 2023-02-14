@@ -17,7 +17,17 @@ input = sys.stdin.readline
 n = int(input())
 list1 = list(map(int, input().split()))
 list2 = list(sorted(set(list1))) # 정렬하고 리스트화 dic에 집어넣기
-dic = {list2[i]:i for i in range (len(list2))}
+dic = {list2[i]:i for i in range (len(list2))} # 한 줄로 쓰는거 어렵다
 
 for i in list1  :
-    print(dic[i], end= ' ')
+    print(dic[i], end= ' ') #한 줄 쓰고 안넘어가고 한 칸씩 띄워서 출력 
+
+"""
+20번째 줄
+dic = {}
+for i in range(len(list2)) :
+    dic[list[i]] = i
+for j in list1 :
+    print(dic[j], end = ' ')
+
+"""
