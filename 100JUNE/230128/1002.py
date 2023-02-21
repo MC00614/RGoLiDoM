@@ -16,11 +16,11 @@ for _ in range(n) :
         r = min(r1, r2)
         if d < R :
             if d < R - r :
-                print(2)
+                print(0)
             elif d == R - r :
                 print(1)
             else :
-                print(0)
+                print(2)
         else :
             if d > R + r :
                 print(0)
