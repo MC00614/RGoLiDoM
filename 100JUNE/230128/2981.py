@@ -9,6 +9,7 @@ list2 = list1[1:]
 list3= []
 for j in list2 :
     j = j - list1[0]    
+    list3.append(j)
  
 def GCDofTwoNumbers(a, b): 
     while b != 0 : 
